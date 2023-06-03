@@ -1,0 +1,364 @@
+body {
+    width: 100%;
+    margin: 0px;
+    padding: 0;
+    background-color: rgb(0, 0, 0);
+    background-image: url("img/background.jpg");
+    z-index: 1;
+    background-size: cover;
+}
+
+/* ---------------------------------- */
+
+/* logo  */
+header img {
+    width: 200px;
+    height: 75px;
+
+}
+
+/* gère aussi la barre */
+header {
+    position: fixed;
+    /*la barre reste en scrollant*/
+    z-index: 999;
+    top: 0;
+    width: 100%;
+    padding: 10px;
+    background-image: url("img/background.jpg");
+}
+
+
+
+
+/* barre de nav  */
+nav {
+    display: flex;
+    width: 100%;
+
+
+}
+
+
+nav ul {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    list-style-type: none;
+    gap: 50px;
+
+}
+
+
+nav li {
+    font-family: policeh1;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 1s;
+    background: linear-gradient(120deg, rgb(20, 75, 255), rgb(81, 156, 255), rgba(96, 125, 255, 0.3));
+    background-position: 100% 0;
+    background-size: 200% 100%;
+}
+
+nav li:hover {
+    transform: scale(1.1);
+    background-position: 50% 0;
+}
+
+/* liens  */
+
+.lien_navbar {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* ---------------------------------- */
+
+/* les articles */
+header article {
+
+    display: flex;
+    flex-direction: row;
+}
+
+/* ---------------------------------- */
+
+/* bannière  */
+.banner {
+    transition: 1s;
+    z-index: 2;
+    transform: scale(1.1);
+    /*anti barre bleue*/
+    width: 100%;
+    margin-top: 50px;
+}
+
+.banner:hover {
+    transform: scale(1.2);
+
+
+}
+
+
+.zoom {
+    /* petit zoom  */
+    overflow: hidden;
+
+}
+
+/* ---------------------------------- */
+/* titre principal*/
+h1 {
+    display: flex;
+    justify-content: center;
+    font-family: policeh1;
+    color: white;
+    font-size: 60px;
+    transition: 1s;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    margin-block: 0;
+    position: relative;
+    width: 100%;
+
+
+
+}
+
+h1:hover {
+    color: #fff;
+    text-shadow: 0 0 5px #0380f4,
+        0 0 25px #0380f4,
+        0 0 50px #0380f4,
+        0 0 100px #0380f4;
+}
+
+/* police personnalisé*/
+@font-face {
+    font-family: policeh1;
+    src: url(police/static/Montserrat-SemiBold.ttf);
+
+}
+
+@font-face {
+    font-family: policeh2;
+    src: url(police/static/Montserrat-Regular.ttf);
+
+}
+
+@font-face {
+    font-family: policep;
+    src: url(police/static/Montserrat-Light.ttf);
+}
+
+/*------------------------------------------------------------*/
+.assidedroit {
+    border-block: inherit;
+    float: right;
+    width: max-content;
+    height: auto;
+    margin-left: 20px;
+}
+
+.assidegauche {
+    float: left;
+    width: max-content;
+    height: auto;
+    margin-right: 20px;
+}
+
+/* ------------------------------------------------------------------------------------------------------ */
+
+
+/* page  */
+/* positionnement image et txt*/
+.img1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+/*--------------------------------------*/
+
+
+/* première ligne */
+
+.div1h2a {
+    padding: 40px 0;
+    height: auto;
+}
+
+.div1h2a .div2h2a {
+    position: relative;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+}
+
+
+.div1h2a h2 {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    right: 0;
+    top: 0%;
+    width: 45%;
+    text-align: left;
+    font-size: 25px;
+    font-family: policeh2;
+}
+
+.div1h2a p {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    right: 0;
+    top: 60px;
+    width: 45%;
+    text-align: left;
+    font-size: 20px;
+    font-family: policep;
+}
+
+.div3h2a {
+    border-radius: 30px;
+    width: 45%;
+    overflow: hidden;
+}
+
+.imgun {
+    border-radius: 30px;
+    opacity: 90%;
+    width: 100%;
+    position: relative;
+    transition: 1s;
+    transform: scale(1.1);
+}
+
+.imgun:hover {
+    transform: scale(1.2);
+    overflow: hidden;
+}
+
+/*----------------------------------------------------*/
+
+/* deuxième ligne  */
+
+.div1h2b {
+    padding: 40px 0;
+    height: auto;
+}
+
+.div1h2b .div2h2b {
+    position: relative;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    display: flex;
+    justify-content: end;
+}
+
+
+.div1h2b h2 {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    left: 0;
+    top: 0%;
+    width: 45%;
+    text-align: left;
+    font-size: 25px;
+    font-family: policeh2;
+}
+
+.div1h2b p {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    left: 0;
+    top: 60px;
+    width: 45%;
+    text-align: left;
+    font-size: 20px;
+    font-family: policep;
+}
+
+.div3h2b {
+    border-radius: 30px;
+    width: 45%;
+    overflow: hidden;
+}
+
+.imgdeux {
+    opacity: 90%;
+    width: 100%;
+    position: relative;
+    transition: 1s;
+    transform: scale(1.03);
+}
+
+.imgdeux:hover {
+    transform: scale(1.1);
+    overflow: hidden;
+}
+
+
+
+
+/* ------- section------*/
+
+.sectionmain {
+    width: fit-content;
+    height: fit-content;
+}
+
+/* ------------------------------------------------------------------------------------------------------ */
+
+footer{
+    background-color: rgba(0, 0, 0, 0.623);
+    height: auto;
+    color: white;
+   
+    
+}
+
+footer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 50px;
+    list-style-type: none;
+    margin: 0;
+    gap: 50px;
+}
+
+footer ul :first-child{
+    display: flex;
+    margin-right: -45px;
+}
+footer ul li{
+    font-family: policep;
+    font-size: 20px;
+}
+footer {
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
+    justify-content: center;
+
+}
+footer img{
+    width: 100%;
+}
+footer a{
+    width: 83px;
+    margin-left: 50px;
+}
+.link2{
+    margin-top: 25px;
+}
+.link1 {
+    margin-top: 20px;
+}
+
+
+
