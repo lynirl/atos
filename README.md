@@ -1,5 +1,5 @@
 # Atos
-<p>Site fictionnel dans le cadre de la SAE 1.05/06 effectuée en BUT Informatique à l'IUT2 de Grenoble.<p>
+<p>Fictional website realized for the SAE 1.05/06, based on a real enterprise, as a project in BUT Informatique at IUT2 Grenoble.<p>
 
 <p>Participants:<p>
 
